@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2702F57D554388C2F7237778 /* Pods_ClearSkyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA38FADE8E38EE2093EA86F /* Pods_ClearSkyUITests.framework */; };
+		2EAB74E5CB66ACBCF896BC16 /* Pods_ClearSky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC0377C43EF981AA7DDC237 /* Pods_ClearSky.framework */; };
+		CD30BD2D210B11B7009E20F3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD2C210B11B7009E20F3 /* DataService.swift */; };
+		CD30BD2F210B22A2009E20F3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD2E210B22A2009E20F3 /* Data.swift */; };
+		CD30BD32210F06A2009E20F3 /* AQI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD31210F06A2009E20F3 /* AQI.swift */; };
+		CD30BD34210F1144009E20F3 /* AqiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD33210F1144009E20F3 /* AqiService.swift */; };
 		CD68C50F20FCBE79007446DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C50E20FCBE79007446DB /* AppDelegate.swift */; };
-		CD68C51120FCBE79007446DB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C51020FCBE79007446DB /* FirstViewController.swift */; };
-		CD68C51320FCBE79007446DB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C51220FCBE79007446DB /* SecondViewController.swift */; };
+		CD68C51120FCBE79007446DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C51020FCBE79007446DB /* HomeViewController.swift */; };
+		CD68C51320FCBE79007446DB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C51220FCBE79007446DB /* MapViewController.swift */; };
 		CD68C51620FCBE79007446DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68C51420FCBE79007446DB /* Main.storyboard */; };
-		CD68C51820FCBE7B007446DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD68C51720FCBE7B007446DB /* Assets.xcassets */; };
 		CD68C51B20FCBE7B007446DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68C51920FCBE7B007446DB /* LaunchScreen.storyboard */; };
 		CD68C52620FCBE7B007446DB /* ClearSkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C52520FCBE7B007446DB /* ClearSkyTests.swift */; };
 		CD68C53120FCBE7B007446DB /* ClearSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C53020FCBE7B007446DB /* ClearSkyUITests.swift */; };
+		CD6B1C3D212AEEC9005521F1 /* ChartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B1C3C212AEEC9005521F1 /* ChartHelper.swift */; };
+		CD971AA62118982C00960FE8 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD971AA52118982C00960FE8 /* MapData.swift */; };
+		CD971AA821199C7200960FE8 /* MapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD971AA721199C7200960FE8 /* MapService.swift */; };
+		CDFB717121072ACD0028B59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFB717021072ACD0028B59C /* Assets.xcassets */; };
+		CDFB7175210765440028B59C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB7174210765440028B59C /* CollectionViewCell.swift */; };
+		E49C1D492136BE9E00923BD7 /* ClearSky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E49C1D472136BE9E00923BD7 /* ClearSky.xcdatamodeld */; };
+		EFF3D00B64F24A24BE5CF061 /* Pods_ClearSkyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649B6C6F89E301309EB53719 /* Pods_ClearSkyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +47,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		419A44FAC7A16DFC4549BFF8 /* Pods-ClearSkyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSkyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSkyTests/Pods-ClearSkyTests.release.xcconfig"; sourceTree = "<group>"; };
+		4249CAAAF87EC50F5A204053 /* Pods-ClearSkyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSkyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSkyUITests/Pods-ClearSkyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DA38FADE8E38EE2093EA86F /* Pods_ClearSkyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearSkyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		649B6C6F89E301309EB53719 /* Pods_ClearSkyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearSkyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC90B942E774658F165D71A /* Pods-ClearSkyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSkyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSkyUITests/Pods-ClearSkyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7DC0377C43EF981AA7DDC237 /* Pods_ClearSky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearSky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD30BD2C210B11B7009E20F3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		CD30BD2E210B22A2009E20F3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		CD30BD31210F06A2009E20F3 /* AQI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQI.swift; sourceTree = "<group>"; };
+		CD30BD33210F1144009E20F3 /* AqiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiService.swift; sourceTree = "<group>"; };
 		CD68C50B20FCBE79007446DB /* ClearSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD68C50E20FCBE79007446DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD68C51020FCBE79007446DB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CD68C51220FCBE79007446DB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CD68C51020FCBE79007446DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CD68C51220FCBE79007446DB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CD68C51520FCBE79007446DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD68C51720FCBE7B007446DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD68C51A20FCBE7B007446DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD68C51C20FCBE7B007446DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD68C52120FCBE7B007446DB /* ClearSkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearSkyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +70,15 @@
 		CD68C52C20FCBE7B007446DB /* ClearSkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearSkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD68C53020FCBE7B007446DB /* ClearSkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyUITests.swift; sourceTree = "<group>"; };
 		CD68C53220FCBE7B007446DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6B1C3C212AEEC9005521F1 /* ChartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHelper.swift; sourceTree = "<group>"; };
+		CD971AA52118982C00960FE8 /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
+		CD971AA721199C7200960FE8 /* MapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapService.swift; sourceTree = "<group>"; };
+		CDFB717021072ACD0028B59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDFB7174210765440028B59C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E49C1D482136BE9E00923BD7 /* ClearSky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClearSky.xcdatamodel; sourceTree = "<group>"; };
+		EE29ABEA2F7D03AE27035A3E /* Pods-ClearSky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSky.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSky/Pods-ClearSky.release.xcconfig"; sourceTree = "<group>"; };
+		EF60653BF19A385F31FE3211 /* Pods-ClearSky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSky/Pods-ClearSky.debug.xcconfig"; sourceTree = "<group>"; };
+		F43B7ED68B6750D3F111A762 /* Pods-ClearSkyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSkyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSkyTests/Pods-ClearSkyTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EAB74E5CB66ACBCF896BC16 /* Pods_ClearSky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF3D00B64F24A24BE5CF061 /* Pods_ClearSkyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +102,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2702F57D554388C2F7237778 /* Pods_ClearSkyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89D35D601B54E2B7F3A5CF39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF60653BF19A385F31FE3211 /* Pods-ClearSky.debug.xcconfig */,
+				EE29ABEA2F7D03AE27035A3E /* Pods-ClearSky.release.xcconfig */,
+				F43B7ED68B6750D3F111A762 /* Pods-ClearSkyTests.debug.xcconfig */,
+				419A44FAC7A16DFC4549BFF8 /* Pods-ClearSkyTests.release.xcconfig */,
+				4249CAAAF87EC50F5A204053 /* Pods-ClearSkyUITests.debug.xcconfig */,
+				6CC90B942E774658F165D71A /* Pods-ClearSkyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C774852146D8937133892B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DC0377C43EF981AA7DDC237 /* Pods_ClearSky.framework */,
+				649B6C6F89E301309EB53719 /* Pods_ClearSkyTests.framework */,
+				5DA38FADE8E38EE2093EA86F /* Pods_ClearSkyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD30BD2A210B0E15009E20F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD30BD2E210B22A2009E20F3 /* Data.swift */,
+				CD30BD31210F06A2009E20F3 /* AQI.swift */,
+				CD971AA52118982C00960FE8 /* MapData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD30BD2B210B0E35009E20F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD30BD2C210B11B7009E20F3 /* DataService.swift */,
+				CD30BD33210F1144009E20F3 /* AqiService.swift */,
+				CD971AA721199C7200960FE8 /* MapService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CD68C50220FCBE79007446DB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +159,8 @@
 				CD68C52420FCBE7B007446DB /* ClearSkyTests */,
 				CD68C52F20FCBE7B007446DB /* ClearSkyUITests */,
 				CD68C50C20FCBE79007446DB /* Products */,
+				89D35D601B54E2B7F3A5CF39 /* Pods */,
+				8C774852146D8937133892B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +177,18 @@
 		CD68C50D20FCBE79007446DB /* ClearSky */ = {
 			isa = PBXGroup;
 			children = (
+				CD6B1C3B212AEEA0005521F1 /* Helpers */,
+				CD30BD2B210B0E35009E20F3 /* Services */,
+				CD30BD2A210B0E15009E20F3 /* Models */,
 				CD68C50E20FCBE79007446DB /* AppDelegate.swift */,
-				CD68C51020FCBE79007446DB /* FirstViewController.swift */,
-				CD68C51220FCBE79007446DB /* SecondViewController.swift */,
-				CD68C51420FCBE79007446DB /* Main.storyboard */,
-				CD68C51720FCBE7B007446DB /* Assets.xcassets */,
+				CDFB7174210765440028B59C /* CollectionViewCell.swift */,
+				CD68C51020FCBE79007446DB /* HomeViewController.swift */,
+				CD68C51220FCBE79007446DB /* MapViewController.swift */,
 				CD68C51920FCBE7B007446DB /* LaunchScreen.storyboard */,
+				CD68C51420FCBE79007446DB /* Main.storyboard */,
+				CDFB717021072ACD0028B59C /* Assets.xcassets */,
 				CD68C51C20FCBE7B007446DB /* Info.plist */,
+				E49C1D472136BE9E00923BD7 /* ClearSky.xcdatamodeld */,
 			);
 			path = ClearSky;
 			sourceTree = "<group>";
@@ -128,6 +211,14 @@
 			path = ClearSkyUITests;
 			sourceTree = "<group>";
 		};
+		CD6B1C3B212AEEA0005521F1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD6B1C3C212AEEC9005521F1 /* ChartHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD68C53520FCBE7B007446DB /* Build configuration list for PBXNativeTarget "ClearSky" */;
 			buildPhases = (
+				52CC0EA5A5E8D06B95B92ECC /* [CP] Check Pods Manifest.lock */,
 				CD68C50720FCBE79007446DB /* Sources */,
 				CD68C50820FCBE79007446DB /* Frameworks */,
 				CD68C50920FCBE79007446DB /* Resources */,
+				CD76763D3948EADD7AF7DB52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD68C53820FCBE7B007446DB /* Build configuration list for PBXNativeTarget "ClearSkyTests" */;
 			buildPhases = (
+				4A8A9CC53B6AE221FC64B360 /* [CP] Check Pods Manifest.lock */,
 				CD68C51D20FCBE7B007446DB /* Sources */,
 				CD68C51E20FCBE7B007446DB /* Frameworks */,
 				CD68C51F20FCBE7B007446DB /* Resources */,
@@ -170,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD68C53B20FCBE7B007446DB /* Build configuration list for PBXNativeTarget "ClearSkyUITests" */;
 			buildPhases = (
+				340D65828A1E31FDB354B8E2 /* [CP] Check Pods Manifest.lock */,
 				CD68C52820FCBE7B007446DB /* Sources */,
 				CD68C52920FCBE7B007446DB /* Frameworks */,
 				CD68C52A20FCBE7B007446DB /* Resources */,
@@ -233,7 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD68C51B20FCBE7B007446DB /* LaunchScreen.storyboard in Resources */,
-				CD68C51820FCBE7B007446DB /* Assets.xcassets in Resources */,
+				CDFB717121072ACD0028B59C /* Assets.xcassets in Resources */,
 				CD68C51620FCBE79007446DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +349,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		340D65828A1E31FDB354B8E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClearSkyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8A9CC53B6AE221FC64B360 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClearSkyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52CC0EA5A5E8D06B95B92ECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClearSky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD76763D3948EADD7AF7DB52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClearSky/Pods-ClearSky-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClearSky/Pods-ClearSky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD68C50720FCBE79007446DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD68C51320FCBE79007446DB /* SecondViewController.swift in Sources */,
+				CD971AA821199C7200960FE8 /* MapService.swift in Sources */,
+				CD30BD2D210B11B7009E20F3 /* DataService.swift in Sources */,
+				CD971AA62118982C00960FE8 /* MapData.swift in Sources */,
+				CD30BD32210F06A2009E20F3 /* AQI.swift in Sources */,
+				E49C1D492136BE9E00923BD7 /* ClearSky.xcdatamodeld in Sources */,
+				CD6B1C3D212AEEC9005521F1 /* ChartHelper.swift in Sources */,
+				CD30BD2F210B22A2009E20F3 /* Data.swift in Sources */,
+				CD68C51320FCBE79007446DB /* MapViewController.swift in Sources */,
 				CD68C50F20FCBE79007446DB /* AppDelegate.swift in Sources */,
-				CD68C51120FCBE79007446DB /* FirstViewController.swift in Sources */,
+				CDFB7175210765440028B59C /* CollectionViewCell.swift in Sources */,
+				CD68C51120FCBE79007446DB /* HomeViewController.swift in Sources */,
+				CD30BD34210F1144009E20F3 /* AqiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,9 +611,11 @@
 		};
 		CD68C53620FCBE7B007446DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF60653BF19A385F31FE3211 /* Pods-ClearSky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TLJS9JZKBP;
 				INFOPLIST_FILE = ClearSky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +630,11 @@
 		};
 		CD68C53720FCBE7B007446DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE29ABEA2F7D03AE27035A3E /* Pods-ClearSky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TLJS9JZKBP;
 				INFOPLIST_FILE = ClearSky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +649,7 @@
 		};
 		CD68C53920FCBE7B007446DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F43B7ED68B6750D3F111A762 /* Pods-ClearSkyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +670,7 @@
 		};
 		CD68C53A20FCBE7B007446DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 419A44FAC7A16DFC4549BFF8 /* Pods-ClearSkyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +691,7 @@
 		};
 		CD68C53C20FCBE7B007446DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4249CAAAF87EC50F5A204053 /* Pods-ClearSkyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +711,7 @@
 		};
 		CD68C53D20FCBE7B007446DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC90B942E774658F165D71A /* Pods-ClearSkyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -582,6 +769,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E49C1D472136BE9E00923BD7 /* ClearSky.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E49C1D482136BE9E00923BD7 /* ClearSky.xcdatamodel */,
+			);
+			currentVersion = E49C1D482136BE9E00923BD7 /* ClearSky.xcdatamodel */;
+			path = ClearSky.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD68C50320FCBE79007446DB /* Project object */;
 }
