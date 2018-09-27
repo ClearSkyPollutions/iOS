@@ -1,6 +1,0 @@
-framework module Pods_ClearSky {
-  umbrella header "Pods-ClearSky-umbrella.h"
-
-  export *
-  module * { export * }
-}
