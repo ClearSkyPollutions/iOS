@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		2702F57D554388C2F7237778 /* Pods_ClearSkyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA38FADE8E38EE2093EA86F /* Pods_ClearSkyUITests.framework */; };
 		2EAB74E5CB66ACBCF896BC16 /* Pods_ClearSky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC0377C43EF981AA7DDC237 /* Pods_ClearSky.framework */; };
+		CD156113213FF99800C307EC /* ChartPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15610E213FF99800C307EC /* ChartPopUpViewController.swift */; };
+		CD156114213FF99800C307EC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15610F213FF99800C307EC /* CollectionViewCell.swift */; };
+		CD156115213FF99800C307EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD156110213FF99800C307EC /* HomeViewController.swift */; };
+		CD156116213FF99800C307EC /* InfoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD156111213FF99800C307EC /* InfoPopUpViewController.swift */; };
+		CD156117213FF99800C307EC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD156112213FF99800C307EC /* MapViewController.swift */; };
+		CD15611F214276EE00C307EC /* Pollutant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15611E214276EE00C307EC /* Pollutant.swift */; };
+		CD1561222142B0D200C307EC /* pollutants.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1561212142B0D100C307EC /* pollutants.json */; };
+		CD2733F0215BB62600DBA7B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2733EF215BB62600DBA7B1 /* CoreLocation.framework */; };
 		CD30BD2D210B11B7009E20F3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD2C210B11B7009E20F3 /* DataService.swift */; };
-		CD30BD2F210B22A2009E20F3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD2E210B22A2009E20F3 /* Data.swift */; };
+		CD30BD2F210B22A2009E20F3 /* MesureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD2E210B22A2009E20F3 /* MesureData.swift */; };
 		CD30BD32210F06A2009E20F3 /* AQI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD31210F06A2009E20F3 /* AQI.swift */; };
 		CD30BD34210F1144009E20F3 /* AqiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30BD33210F1144009E20F3 /* AqiService.swift */; };
 		CD68C50F20FCBE79007446DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C50E20FCBE79007446DB /* AppDelegate.swift */; };
-		CD68C51120FCBE79007446DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C51020FCBE79007446DB /* HomeViewController.swift */; };
-		CD68C51320FCBE79007446DB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C51220FCBE79007446DB /* MapViewController.swift */; };
 		CD68C51620FCBE79007446DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68C51420FCBE79007446DB /* Main.storyboard */; };
 		CD68C51B20FCBE7B007446DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68C51920FCBE7B007446DB /* LaunchScreen.storyboard */; };
 		CD68C52620FCBE7B007446DB /* ClearSkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68C52520FCBE7B007446DB /* ClearSkyTests.swift */; };
@@ -23,9 +29,22 @@
 		CD6B1C3D212AEEC9005521F1 /* ChartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B1C3C212AEEC9005521F1 /* ChartHelper.swift */; };
 		CD971AA62118982C00960FE8 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD971AA52118982C00960FE8 /* MapData.swift */; };
 		CD971AA821199C7200960FE8 /* MapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD971AA721199C7200960FE8 /* MapService.swift */; };
+		CD9D032521539333001C806B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D032421539333001C806B /* SettingsViewController.swift */; };
+		CD9D032721539358001C806B /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D032621539358001C806B /* SettingService.swift */; };
+		CD9D03292153A087001C806B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D03282153A087001C806B /* Setting.swift */; };
+		CD9D032B2153BA3C001C806B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D032A2153BA3C001C806B /* Address.swift */; };
+		CD9D032D2153BCAC001C806B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D032C2153BCAC001C806B /* Location.swift */; };
+		CDBE3BBF2147C23800B6A571 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE3BBE2147C23800B6A571 /* Sensor.swift */; };
+		CDBE3BC12147C75500B6A571 /* sensors.json in Resources */ = {isa = PBXBuildFile; fileRef = CDBE3BC02147C75500B6A571 /* sensors.json */; };
+		CDBE3BC32147E3F100B6A571 /* InfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE3BC22147E3F100B6A571 /* InfoService.swift */; };
+		CDBE3BC52148106D00B6A571 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE3BC42148106C00B6A571 /* InformationViewController.swift */; };
+		CDBE3BC7214810EF00B6A571 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE3BC6214810EF00B6A571 /* TableViewCell.swift */; };
+		CDC5C81D21493BD600366D8D /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5C81C21493BD600366D8D /* Info.swift */; };
 		CDFB717121072ACD0028B59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFB717021072ACD0028B59C /* Assets.xcassets */; };
-		CDFB7175210765440028B59C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB7174210765440028B59C /* CollectionViewCell.swift */; };
+		CDFBE17E21524F1B00999F36 /* MapPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBE17D21524F1B00999F36 /* MapPopUpViewController.swift */; };
 		E49C1D492136BE9E00923BD7 /* ClearSky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E49C1D472136BE9E00923BD7 /* ClearSky.xcdatamodeld */; };
+		E4AE680F213D7E5C0068514F /* InfoPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AE680D213D7E5C0068514F /* InfoPopup.storyboard */; };
+		E4F554D821381D6600DB194E /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F554D721381D6600DB194E /* DBHelper.swift */; };
 		EFF3D00B64F24A24BE5CF061 /* Pods_ClearSkyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649B6C6F89E301309EB53719 /* Pods_ClearSkyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,14 +72,20 @@
 		649B6C6F89E301309EB53719 /* Pods_ClearSkyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearSkyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC90B942E774658F165D71A /* Pods-ClearSkyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSkyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSkyUITests/Pods-ClearSkyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DC0377C43EF981AA7DDC237 /* Pods_ClearSky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearSky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD15610E213FF99800C307EC /* ChartPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartPopUpViewController.swift; sourceTree = "<group>"; };
+		CD15610F213FF99800C307EC /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CD156110213FF99800C307EC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CD156111213FF99800C307EC /* InfoPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPopUpViewController.swift; sourceTree = "<group>"; };
+		CD156112213FF99800C307EC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CD15611E214276EE00C307EC /* Pollutant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pollutant.swift; sourceTree = "<group>"; };
+		CD1561212142B0D100C307EC /* pollutants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pollutants.json; sourceTree = "<group>"; };
+		CD2733EF215BB62600DBA7B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CD30BD2C210B11B7009E20F3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		CD30BD2E210B22A2009E20F3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		CD30BD2E210B22A2009E20F3 /* MesureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesureData.swift; sourceTree = "<group>"; };
 		CD30BD31210F06A2009E20F3 /* AQI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQI.swift; sourceTree = "<group>"; };
 		CD30BD33210F1144009E20F3 /* AqiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiService.swift; sourceTree = "<group>"; };
 		CD68C50B20FCBE79007446DB /* ClearSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD68C50E20FCBE79007446DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD68C51020FCBE79007446DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CD68C51220FCBE79007446DB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CD68C51520FCBE79007446DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD68C51A20FCBE7B007446DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD68C51C20FCBE7B007446DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,9 +98,22 @@
 		CD6B1C3C212AEEC9005521F1 /* ChartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHelper.swift; sourceTree = "<group>"; };
 		CD971AA52118982C00960FE8 /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
 		CD971AA721199C7200960FE8 /* MapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapService.swift; sourceTree = "<group>"; };
+		CD9D032421539333001C806B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CD9D032621539358001C806B /* SettingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingService.swift; sourceTree = "<group>"; };
+		CD9D03282153A087001C806B /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		CD9D032A2153BA3C001C806B /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		CD9D032C2153BCAC001C806B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CDBE3BBE2147C23800B6A571 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		CDBE3BC02147C75500B6A571 /* sensors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sensors.json; sourceTree = "<group>"; };
+		CDBE3BC22147E3F100B6A571 /* InfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoService.swift; sourceTree = "<group>"; };
+		CDBE3BC42148106C00B6A571 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		CDBE3BC6214810EF00B6A571 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CDC5C81C21493BD600366D8D /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		CDFB717021072ACD0028B59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CDFB7174210765440028B59C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CDFBE17D21524F1B00999F36 /* MapPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopUpViewController.swift; sourceTree = "<group>"; };
 		E49C1D482136BE9E00923BD7 /* ClearSky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClearSky.xcdatamodel; sourceTree = "<group>"; };
+		E4AE680E213D7E5C0068514F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InfoPopup.storyboard; sourceTree = "<group>"; };
+		E4F554D721381D6600DB194E /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		EE29ABEA2F7D03AE27035A3E /* Pods-ClearSky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSky.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSky/Pods-ClearSky.release.xcconfig"; sourceTree = "<group>"; };
 		EF60653BF19A385F31FE3211 /* Pods-ClearSky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSky/Pods-ClearSky.debug.xcconfig"; sourceTree = "<group>"; };
 		F43B7ED68B6750D3F111A762 /* Pods-ClearSkyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSkyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClearSkyTests/Pods-ClearSkyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2733F0215BB62600DBA7B1 /* CoreLocation.framework in Frameworks */,
 				2EAB74E5CB66ACBCF896BC16 /* Pods_ClearSky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +164,7 @@
 		8C774852146D8937133892B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD2733EF215BB62600DBA7B1 /* CoreLocation.framework */,
 				7DC0377C43EF981AA7DDC237 /* Pods_ClearSky.framework */,
 				649B6C6F89E301309EB53719 /* Pods_ClearSkyTests.framework */,
 				5DA38FADE8E38EE2093EA86F /* Pods_ClearSkyUITests.framework */,
@@ -132,12 +172,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD15610D213FF99800C307EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDBE3BC6214810EF00B6A571 /* TableViewCell.swift */,
+				CDBE3BC42148106C00B6A571 /* InformationViewController.swift */,
+				CD15610E213FF99800C307EC /* ChartPopUpViewController.swift */,
+				CD15610F213FF99800C307EC /* CollectionViewCell.swift */,
+				CD156110213FF99800C307EC /* HomeViewController.swift */,
+				CD156111213FF99800C307EC /* InfoPopUpViewController.swift */,
+				CD156112213FF99800C307EC /* MapViewController.swift */,
+				CDFBE17D21524F1B00999F36 /* MapPopUpViewController.swift */,
+				CD9D032421539333001C806B /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CD1561202142B0D100C307EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDBE3BC02147C75500B6A571 /* sensors.json */,
+				CD1561212142B0D100C307EC /* pollutants.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CD30BD2A210B0E15009E20F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CD30BD2E210B22A2009E20F3 /* Data.swift */,
+				CD30BD2E210B22A2009E20F3 /* MesureData.swift */,
 				CD30BD31210F06A2009E20F3 /* AQI.swift */,
+				CD15611E214276EE00C307EC /* Pollutant.swift */,
 				CD971AA52118982C00960FE8 /* MapData.swift */,
+				CDBE3BBE2147C23800B6A571 /* Sensor.swift */,
+				CDC5C81C21493BD600366D8D /* Info.swift */,
+				CD9D03282153A087001C806B /* Setting.swift */,
+				CD9D032A2153BA3C001C806B /* Address.swift */,
+				CD9D032C2153BCAC001C806B /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +219,8 @@
 				CD30BD2C210B11B7009E20F3 /* DataService.swift */,
 				CD30BD33210F1144009E20F3 /* AqiService.swift */,
 				CD971AA721199C7200960FE8 /* MapService.swift */,
+				CDBE3BC22147E3F100B6A571 /* InfoService.swift */,
+				CD9D032621539358001C806B /* SettingService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -181,14 +254,14 @@
 				CD30BD2B210B0E35009E20F3 /* Services */,
 				CD30BD2A210B0E15009E20F3 /* Models */,
 				CD68C50E20FCBE79007446DB /* AppDelegate.swift */,
-				CDFB7174210765440028B59C /* CollectionViewCell.swift */,
-				CD68C51020FCBE79007446DB /* HomeViewController.swift */,
-				CD68C51220FCBE79007446DB /* MapViewController.swift */,
 				CD68C51920FCBE7B007446DB /* LaunchScreen.storyboard */,
 				CD68C51420FCBE79007446DB /* Main.storyboard */,
+				E4AE680D213D7E5C0068514F /* InfoPopup.storyboard */,
 				CDFB717021072ACD0028B59C /* Assets.xcassets */,
 				CD68C51C20FCBE7B007446DB /* Info.plist */,
 				E49C1D472136BE9E00923BD7 /* ClearSky.xcdatamodeld */,
+				CD1561202142B0D100C307EC /* Resources */,
+				CD15610D213FF99800C307EC /* Controllers */,
 			);
 			path = ClearSky;
 			sourceTree = "<group>";
@@ -215,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6B1C3C212AEEC9005521F1 /* ChartHelper.swift */,
+				E4F554D721381D6600DB194E /* DBHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -330,6 +404,9 @@
 				CD68C51B20FCBE7B007446DB /* LaunchScreen.storyboard in Resources */,
 				CDFB717121072ACD0028B59C /* Assets.xcassets in Resources */,
 				CD68C51620FCBE79007446DB /* Main.storyboard in Resources */,
+				CDBE3BC12147C75500B6A571 /* sensors.json in Resources */,
+				E4AE680F213D7E5C0068514F /* InfoPopup.storyboard in Resources */,
+				CD1561222142B0D200C307EC /* pollutants.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,17 +507,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD971AA821199C7200960FE8 /* MapService.swift in Sources */,
+				CDBE3BBF2147C23800B6A571 /* Sensor.swift in Sources */,
+				CD9D032B2153BA3C001C806B /* Address.swift in Sources */,
+				CDBE3BC52148106D00B6A571 /* InformationViewController.swift in Sources */,
 				CD30BD2D210B11B7009E20F3 /* DataService.swift in Sources */,
+				CD156114213FF99800C307EC /* CollectionViewCell.swift in Sources */,
+				CD9D03292153A087001C806B /* Setting.swift in Sources */,
+				CD156117213FF99800C307EC /* MapViewController.swift in Sources */,
+				CDC5C81D21493BD600366D8D /* Info.swift in Sources */,
 				CD971AA62118982C00960FE8 /* MapData.swift in Sources */,
 				CD30BD32210F06A2009E20F3 /* AQI.swift in Sources */,
+				CD156115213FF99800C307EC /* HomeViewController.swift in Sources */,
 				E49C1D492136BE9E00923BD7 /* ClearSky.xcdatamodeld in Sources */,
+				CD9D032D2153BCAC001C806B /* Location.swift in Sources */,
+				CDBE3BC32147E3F100B6A571 /* InfoService.swift in Sources */,
 				CD6B1C3D212AEEC9005521F1 /* ChartHelper.swift in Sources */,
-				CD30BD2F210B22A2009E20F3 /* Data.swift in Sources */,
-				CD68C51320FCBE79007446DB /* MapViewController.swift in Sources */,
+				CDBE3BC7214810EF00B6A571 /* TableViewCell.swift in Sources */,
+				CD30BD2F210B22A2009E20F3 /* MesureData.swift in Sources */,
+				CD9D032521539333001C806B /* SettingsViewController.swift in Sources */,
 				CD68C50F20FCBE79007446DB /* AppDelegate.swift in Sources */,
-				CDFB7175210765440028B59C /* CollectionViewCell.swift in Sources */,
-				CD68C51120FCBE79007446DB /* HomeViewController.swift in Sources */,
 				CD30BD34210F1144009E20F3 /* AqiService.swift in Sources */,
+				CD9D032721539358001C806B /* SettingService.swift in Sources */,
+				CD156113213FF99800C307EC /* ChartPopUpViewController.swift in Sources */,
+				CDFBE17E21524F1B00999F36 /* MapPopUpViewController.swift in Sources */,
+				CD156116213FF99800C307EC /* InfoPopUpViewController.swift in Sources */,
+				CD15611F214276EE00C307EC /* Pollutant.swift in Sources */,
+				E4F554D821381D6600DB194E /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +582,14 @@
 				CD68C51A20FCBE7B007446DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E4AE680D213D7E5C0068514F /* InfoPopup.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4AE680E213D7E5C0068514F /* Base */,
+			);
+			name = InfoPopup.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -623,6 +723,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Sogeti.ClearSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -642,6 +743,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Sogeti.ClearSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

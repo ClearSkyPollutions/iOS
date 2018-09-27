@@ -44,7 +44,6 @@ class MapService {
             // parse the result as JSON
             do
             {
-                print("Map Data")
                 var mapData : [MapData] = []
                 var systemName : String = ""
                 var rpi : MapData?

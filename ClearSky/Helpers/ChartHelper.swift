@@ -26,12 +26,12 @@ public class ChartHelper{
     func initChartDialog(mChart : LineChartView, textColor : UIColor) {
         initStandard(mChart: mChart, textColor: textColor)
         
-        mChart.xAxis.enabled = false
-        mChart.leftAxis.enabled = true
+        mChart.xAxis.enabled = true
+        mChart.leftAxis.enabled = false
         mChart.leftAxis.spaceTop = 0.3
         mChart.leftAxis.spaceBottom = 0.3
         mChart.leftAxis.drawGridLinesEnabled = false
-        mChart.rightAxis.enabled = false
+        mChart.rightAxis.enabled = true
         
     }
     
@@ -77,7 +77,7 @@ public class ChartHelper{
             line1.drawCircleHoleEnabled = false
             line1.setColor(lineColor)
             line1.setCircleColor(lineColor)
-            line1.drawHorizontalHighlightIndicatorEnabled = false
+            line1.drawHorizontalHighlightIndicatorEnabled = true
             line1.highlightColor = .orange
             line1.drawValuesEnabled = false
             line1.colors = [lineColor]

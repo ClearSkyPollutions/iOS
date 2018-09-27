@@ -1,0 +1,20 @@
+ [
+      {
+      "name": "SDS011",
+      "smalldesc": "Particulate matters sensor",
+      "desc": "For : Particulate matters concentration Informations : Uses a laser to reads the concentration of particulate matter in the air. Makes some noise as the fan used is rather large.",
+      "image": "microphone"
+      },
+      {
+      "name": "DHT22",
+      "smalldesc": "Temperature & humidity sensor",
+      "desc": " For : Temperature, humidity Informations : Uses a capacitive humidity sensor and a thermistor to measure the surrounding air. Readings every 2 seconds.",
+      "image": "dht22"
+      },
+      {
+      "name": "MQ-2",
+      "smalldesc": "Combustible gases sensor",
+      "desc": "For : Combustible Gases - Methane, Butane, LPG, smoke Informations :  Standard gas concentration sensor, conductivity of the sensor depends on the concentration of target gases in the air.",
+      "image": "mq2"
+      }
+  ]

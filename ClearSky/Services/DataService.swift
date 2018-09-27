@@ -17,10 +17,9 @@ class DataService {
     
     let serverULR: String = "http://51.38.35.251:80/AVG_HOUR?filter[]=date,gt,0&filter[]=systemId,eq,6a923685-f2ee-4b12-8373-8216c895a53e&order=date,desc&transform=1"
 
-    func getData(scale : String, completion: @escaping ( ([Data]) -> Void )) {
+    func getData(scale : String, completion: @escaping ( ([MesureData]) -> Void )) {
         
         let rpiURL: String = "http://192.168.2.118:4000/" + scale + "?filter=date,gt,0&order=date,desc&transform=1"
-        print(rpiURL)
         // set up the URL request
         guard let url = URL(string: rpiURL) else {
             print("Error : cannot create URL")
@@ -50,12 +49,12 @@ class DataService {
             // parse the result as JSON
             do
             {
-                var dataChart : [Data] = []
+                var dataChart : [MesureData] = []
                 
                 if let json = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String:Any]{
                     if let data = json[scale] as? [[String:Any]]{
                         for d in data{
-                            let dataTemp = Data(json: d)
+                            let dataTemp = MesureData(json: d)
                             dataChart.append(dataTemp)
                         }
                     }
