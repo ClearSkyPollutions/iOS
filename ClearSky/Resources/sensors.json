@@ -8,7 +8,7 @@
       {
       "name": "DHT22",
       "smalldesc": "Temperature & humidity sensor",
-      "desc": " For : Temperature, humidity Informations : Uses a capacitive humidity sensor and a thermistor to measure the surrounding air. Readings every 2 seconds.",
+      "desc": "For : Temperature, humidity Informations : Uses a capacitive humidity sensor and a thermistor to measure the surrounding air. Readings every 2 seconds.",
       "image": "dht22"
       },
       {

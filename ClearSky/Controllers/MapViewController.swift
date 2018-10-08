@@ -22,19 +22,16 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        
         let initialLocation = CLLocation(latitude: 48.188529, longitude: 5.724452399999)
         centerMapOnLocation(location: initialLocation)
         
-
         // Service call
         let mapService = MapService()
         mapService.getMapData { (mapData: [MapData]) in
           
             for m in mapData {
-                //self.drawCircleOverlay(latitude: Double(m.latitude)!, longitude: Double(m.longitude)!)
-                self.drawAnnotations(mapPoint: m)
+                self.drawCircleOverlay(latitude: Double(m.latitude)!, longitude: Double(m.longitude)!)
+                //self.drawAnnotations(mapPoint: m)
            }
        }
     }
@@ -76,7 +73,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
    
     func drawCircleOverlay(latitude: Double, longitude: Double) {
         let coordinates = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        circle = MKCircle(center: coordinates, radius: 25000)
+        circle = MKCircle(center: coordinates, radius: 5000)
         self.map.add(circle)
     }
     
@@ -84,8 +81,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
 
         let circleRenderer = MKCircleRenderer(overlay: overlay)
-        circleRenderer.fillColor = UIColor.red.withAlphaComponent(0.1)
-        circleRenderer.strokeColor = UIColor.red
+        circleRenderer.fillColor = UIColor.blue.withAlphaComponent(0.2)
+        circleRenderer.strokeColor = UIColor.blue
         circleRenderer.lineWidth = 1
         
         return circleRenderer

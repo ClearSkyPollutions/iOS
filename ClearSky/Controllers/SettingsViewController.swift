@@ -21,6 +21,8 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var sensorListView: UIView!
     @IBOutlet weak var listConstraint: NSLayoutConstraint!
     
+    
+    var spinner = UIActivityIndicatorView()
     var sensorList : [String] = []
     var sensorLocation = Location(latitude: -1, longitude: -1)
     
@@ -30,7 +32,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //startSpinner
+        startSpinner()
 
         settingService.getConfig { (settings: Setting) in
             
@@ -48,8 +50,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
             // make the sensors view height equals to sensors tableView height dynamicly
             self.listConstraint.constant = self.sensorTable.contentSize.height + 60.0
            
-            //end spinner
-
+            self.stopSpinner()
         }
         
     }
@@ -121,4 +122,21 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
+    
+    func startSpinner() {
+        spinner.center = self.view.center
+        spinner.hidesWhenStopped = true
+        spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        
+        view.addSubview(spinner)
+        
+        spinner.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
+    }
+    
+    func stopSpinner() {
+        spinner.stopAnimating()
+        UIApplication.shared.endIgnoringInteractionEvents()
+    }
+    
 }

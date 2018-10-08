@@ -13,7 +13,7 @@ class InfoPopUpViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
-    @IBOutlet weak var smalldescTextView: UITextView!
+    @IBOutlet weak var smalldescTextView: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     
     var info : Info?
